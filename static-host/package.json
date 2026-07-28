@@ -1,0 +1,7 @@
+{
+  "name": "cinemamod-player-host",
+  "private": true,
+  "scripts": {
+    "test": "node test/test-package.mjs && node test/test-player.mjs"
+  }
+}

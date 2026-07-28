@@ -7,25 +7,25 @@ import org.apache.commons.lang3.NotImplementedException;
 public enum VideoServiceType implements PacketByteBufSerializable<VideoServiceType> {
 
     YOUTUBE(
-            "https://cinemamod-static.ewr1.vultrobjects.com/service/v1/youtube.html",
+            "https://hanbi-cinemamod-player.bshanbi.workers.dev/service/v1/youtube.html",
             "th_volume(%d);",
             "th_video('%s', %b);",
             "th_seek(%d);",
             "https://www.youtube.com/watch?v=%s"),
     TWITCH(
-            "https://cinemamod-static.ewr1.vultrobjects.com/service/v1/twitch.html",
+            "https://hanbi-cinemamod-player.bshanbi.workers.dev/service/v1/twitch.html",
             "th_volume(%d);",
             "th_video('%s');",
             "",
             "https://www.twitch.tv/%s"),
     FILE(
-            "https://cinemamod-static.ewr1.vultrobjects.com/service/v1/file.html",
+            "https://hanbi-cinemamod-player.bshanbi.workers.dev/service/v1/file.html",
             "th_volume(%d);",
             "th_video('%s');",
             "th_seek(%d);",
             "%s"),
     HLS(
-            "https://cinemamod-static.ewr1.vultrobjects.com/service/v1/hls.html",
+            "https://hanbi-cinemamod-player.bshanbi.workers.dev/service/v1/hls.html",
             "th_volume(%d);",
             "th_video('%s');",
             "",

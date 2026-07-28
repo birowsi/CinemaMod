@@ -1,0 +1,35 @@
+html,
+body,
+#player,
+#video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
+
+#video {
+  object-fit: contain;
+}
+
+#message {
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: #ddd;
+  background: #050505;
+  font: 22px/1.4 sans-serif;
+  text-align: center;
+  white-space: pre-wrap;
+}
