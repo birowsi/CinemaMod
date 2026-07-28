@@ -35,6 +35,15 @@ for (const service of services) {
   });
 }
 
+const indexPage = await readFile(path.join(publicDirectory, "index.html"), "utf8");
+assert.match(indexPage, /\.\/assets\/konata-bg\.jpg/);
+
+const backgroundImage = await readFile(
+  path.join(publicDirectory, "assets", "konata-bg.jpg")
+);
+assert.equal(backgroundImage[0], 0xff);
+assert.equal(backgroundImage[1], 0xd8);
+assert.ok(backgroundImage.length <= 100_000, "background image is too large");
 const playerSource = await readFile(
   path.join(publicDirectory, "assets", "player.js"),
   "utf8"

@@ -5,9 +5,30 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>CinemaMod Player Host</title>
   <style>
-    html,body{height:100%;margin:0;background:#050505;color:#ddd;font:16px/1.5 sans-serif}
-    body{display:grid;place-items:center}
+    html,body{height:100%;margin:0}
+    body{
+      display:grid;
+      place-items:center;
+      background-color:#050505;
+      background-image:linear-gradient(rgba(5,5,5,.32),rgba(5,5,5,.62)),url("./assets/konata-bg.jpg");
+      background-position:center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      color:#fff;
+      font:16px/1.5 sans-serif;
+    }
+    main{
+      padding:.75rem 1rem;
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:.5rem;
+      background:rgba(0,0,0,.52);
+      box-shadow:0 .25rem 1.5rem rgba(0,0,0,.35);
+      text-align:center;
+      text-shadow:0 1px 3px #000;
+    }
   </style>
 </head>
-<body>CinemaMod player host is online.</body>
+<body>
+  <main>CinemaMod player host is online.</main>
+</body>
 </html>
