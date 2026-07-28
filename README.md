@@ -5,6 +5,12 @@
 # CinemaMod
 Watch online videos with others in Minecraft.
 
+## Player host restoration
+
+The retired CinemaMod web player in this fork was restored by
+[@birowsi](https://github.com/birowsi). The replacement host source and tests
+are available in [`static-host/`](static-host/).
+
 NOT RELEASED, IN DEVELOPMENT. If you use this, understand that there are bugs and it is not complete.
 
 Current blockers before releasing:
