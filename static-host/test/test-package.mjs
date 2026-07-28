@@ -51,8 +51,14 @@ const playerSource = await readFile(
 for (const api of ["th_video", "th_volume", "th_seek"]) {
   assert.match(playerSource, new RegExp(`window\\.${api}\\s*=`));
 }
+assert.match(playerSource, /hl:\s*"ja"/);
 assert.match(playerSource, /DRIFT_CHECK_MS\s*=\s*5000/);
 assert.match(playerSource, /DRIFT_LIMIT_SECONDS\s*=\s*1\.25/);
 assert.doesNotMatch(playerSource, /\uFFFD/);
 
+const playerStyles = await readFile(
+  path.join(publicDirectory, "assets", "player.css"),
+  "utf8"
+);
+assert.match(playerStyles, /iframe\s*\{[^}]*pointer-events:\s*none;/s);
 console.log(JSON.stringify({ passed: true, results }, null, 2));

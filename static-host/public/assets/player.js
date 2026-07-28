@@ -129,6 +129,7 @@
         videoId: id,
         playerVars: {
           autoplay: 1,
+          hl: "ja",
           controls: 0,
           disablekb: 1,
           fs: 0,
