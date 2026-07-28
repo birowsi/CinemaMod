@@ -1,3 +1,5 @@
+// CinemaMod player-host restoration for this fork by @birowsi.
+
 (function () {
   "use strict";
 
